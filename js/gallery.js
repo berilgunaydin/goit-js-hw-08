@@ -62,7 +62,6 @@ const images = [
       },
 ];
 
-// Gallerynin HTMLde oluşturulması
 
 const galleryContainer = document.querySelector('.gallery');
 const galleryMarkup = images
@@ -83,7 +82,6 @@ const galleryMarkup = images
 
 galleryContainer.innerHTML = galleryMarkup;
 
-// Escape Kapatma
 
 galleryContainer.addEventListener('click', onImageClick);
 
@@ -101,7 +99,7 @@ function onImageClick(event) {
 
   instance.show();
 
-  // Escape ile kapatma
+  
   document.addEventListener('keydown', function onEscPress(e) {
     if (e.key === 'Escape') {
       instance.close();
